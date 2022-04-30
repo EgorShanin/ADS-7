@@ -1,6 +1,7 @@
 // Copyright 2022 NNTU-CS
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
+#include <string>
 
 template<typename T>
 class TPQueue {
@@ -21,7 +22,7 @@ class TPQueue {
     Item* tail;
 };
  public:
-    TPQueue (): head(nullptr), tail(nullptr) {}
+    TPQueue () : head(nullptr), tail(nullptr) {}
     void push(const T& value) {
         Item* comp = head;
         Item* item = create(value);
